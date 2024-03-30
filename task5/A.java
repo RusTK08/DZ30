@@ -22,7 +22,7 @@ class A implements InetrfacetoA{
 class B extends A implements InetrfacetoB{  
     public B(String generalCharacteristics) { //ВЫЗЫВАЕМ ПОЛЕ ОБЩИХ ХАРАКТЕРИСТИК
     super(generalCharacteristics);
-    super.print();
+    //super.print();
     }
     @Override  ///ПЕРЕОПРЕДЕЛИЛИ ИНТЕРФЕЙС
     public void functionTypeB(){
@@ -32,7 +32,7 @@ class B extends A implements InetrfacetoB{
     public String toString(){
         return String.format("generalCharacteristics:%d", generalCharacteristics);
     }
-    void print(){};
+   
 
 }
 
@@ -40,10 +40,10 @@ class C extends A implements InetrfacetoC{
     
     public C(String generalCharacteristics) { //ВЫЗЫВАЕМ ПОЛЕ ОБЩИХ ХАРАКТЕРИСТИК
         super(generalCharacteristics);
-        super.print();
+        //super.print();
         
     }
-    void print(){};
+    //void print(){};
     @Override ///ПЕРЕОПРЕДЕЛИЛИ ИНТЕРФЕЙС
     public void functionTypeC(){
         System.out.println("Функции для класса Ц");
@@ -58,9 +58,9 @@ class D extends A implements  InetrfacetoD{
     
     public D(String generalCharacteristics) { //ВЫЗЫВАЕМ ПОЛЕ ОБЩИХ ХАРАКТЕРИСТИК
         super(generalCharacteristics);
-        super.print();
+        //super.print();
     }
-    void print(){};
+    //void print(){};
     @Override ///ПЕРЕОПРЕДЕЛИЛИ ИНТЕРФЕЙС
     public void functionTypeD(){
         System.out.println("Функции для класса Д");
